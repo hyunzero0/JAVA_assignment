@@ -85,11 +85,18 @@ public class LotteryMenu {
 //	println 메소드를 이용하여 당첨 대상자를 출력하는 메소드
 	public void winObject() {
 //		lc에서 받아온 Set객체를 println()메소드를 통해 출력
+		
 		if(lc.winObject().size() < 4) {
 			System.out.println("추첨자가 4명 미만입니다.");
 		} else {
 			System.out.println(lc.winObject());
 		}
+		
+//		if(lc.winObject() == null) {
+//			System.out.println("추첨자가 4명 미만입니다.");
+//		} else {
+//			System.out.println(lc.winObject());
+//		}
 	}
 	
 	public void sortedWinObject() {

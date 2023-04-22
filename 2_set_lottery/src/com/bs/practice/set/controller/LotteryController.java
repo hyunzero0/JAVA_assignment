@@ -44,7 +44,7 @@ public class LotteryController {
 			while(win.size() < 4) {
 				win.add(win1.get((int)(Math.random() * win1.size())));
 			}
-		}
+		} 
 		return win;
 	}
 	
@@ -69,10 +69,6 @@ public class LotteryController {
 //	특정 당첨자를 검색하는 메소드
 	public boolean searchWinner(Lottery l) {
 		// 전달 받은 l을 win에서 찾고 찾은 결과인 boolean 값 반환
-		if(win.contains(l)) {
-			return true;
-		} else {
-			return false;
-		}
+		return win.contains(l);
 	}
 }
